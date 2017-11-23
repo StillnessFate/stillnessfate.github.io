@@ -1,0 +1,70 @@
+/* Reset */
+a, hr {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+
+/* Sidebar */
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+    position: fixed;
+    background-color: #1c1d26;
+    padding-top: 10px;
+    padding-left: 1%;
+    border-right : 1px solid white;
+}
+
+.vertical-menu a {
+    background-color: #1c1d26; /* Grey background color */
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 3px; /* Add some padding */
+    text-decoration:none !important;
+}
+
+.vertical-menu .contents {
+    font-weight: bold;
+}
+
+.vertical-menu a:hover {
+    font-weight: bold;
+    
+}
+
+.vertical-menu a.active {
+    font-weight: bold;
+    color: #e44c65;
+}
+
+/* Search Box */
+#myInput {
+    width: 110%; /* Full-width */
+    height:auto;
+    font-size: 18px; /* Increase font-size */
+    padding: 0px 0px 0px 10px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+}
+
+/* Fixed Basic */
+a {
+		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		text-decoration: none;
+	}
+hr {
+		border: 0;
+		border-bottom: solid 1px rgba(255, 255, 255, 1);
+		margin: 1em 0;
+	}
+
+		hr.major {
+			margin: 4em 0;
+		}
