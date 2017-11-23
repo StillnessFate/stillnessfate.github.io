@@ -304,3 +304,8 @@
 	});
 
 })(jQuery);
+
+
+function loadHeader() {
+    $("#header").load("header.html");
+}
