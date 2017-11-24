@@ -5,7 +5,6 @@
 */
 
 (function($) {
-
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
@@ -31,6 +30,9 @@
 		// Touch mode.
 			if (skel.vars.mobile)
 				$body.addClass('is-touch');
+
+        // Header menu load
+            $("#header").load("header.html");
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -304,8 +306,3 @@
 	});
 
 })(jQuery);
-
-
-function loadHeader() {
-    $("#header").load("header.html");
-}
