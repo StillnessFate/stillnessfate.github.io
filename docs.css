@@ -17,6 +17,7 @@ a, hr {
     background-color: #1c1d26;
     padding-top: 10px;
     padding-left: 1%;
+    padding-bottom: 4.5em;
     border-right : 1px solid white;
 }
 
@@ -44,7 +45,7 @@ a, hr {
 
 /* Search Box */
 #myInput {
-    width: 110%; /* Full-width */
+    width: 100%; /* Full-width */
     height:auto;
     font-size: 18px; /* Increase font-size */
     padding: 0px 0px 0px 10px; /* Add some padding */
