@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="docs.css" />
+        <link rel="stylesheet" href="assets/css/docs.css" />
         <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -52,20 +52,207 @@
 					<div class="" style="background-color: #1c1d26;">
                         
 						<!-- Content -->
-							<section class="content2" style="; margin-left: 200px; margin-top: 25px; padding-left: 20px; min-width: 900px;">
-								<h3 style="">Dolore Amet Consequat</h3>
-								<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam cubilia adipiscing interdum aliquet aliquet placerat cubilia accumsan cep ante nullam adipiscing tortor odio. Iaculis adipiscing accumsan nascetur in cras. Lacinia placerat.</p>
-								<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique faucibus magna adipiscing aliquet blandit nisi dolor accumsan nascetur lorem. Vis enim. Curae. Mi arcu vis aliquam ipsum non accumsan ac mi faucibus amet eu accumsan erat interdum semper accumsan. Eu sagittis tellus accumsan neque lorem penatibus in porttitor. Vivamus commodo curae. Condimentum lobortis praesent id ac lorem. Lorem vis ipsum dolor feugiat consequat dolore adipiscing.</p>
-								<h3>Sed Magna Ornare</h3>
-								<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus. In accumsan lorem nunc ultrices a ac eu accumsan ac id nullam. Nec lobortis. Faucibus. Mi commodo laoreet arcu at non mi lacinia aliquet non lobortis phasellus accumsan nascetur varius. Integer orci porttitor eu faucibus aliquet faucibus ac accumsan adipiscing accumsan odio. Ut adipiscing.</p>
-								<ul>
-									<li>Faucibus orci lobortis ac adipiscing integer.</li>
-									<li>Col accumsan arcu mi aliquet placerat.</li>
-									<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-									<li>Blandit massa non blandit tempor interdum.</li>
-									<li>Lacinia mattis arcu nascetur lobortis.</li>
-								</ul>
-							</section>
+							<section class="docs-content" style="margin-left: 200px; margin-top: 25px; padding-left: 20px; min-width: 900px;">
+                                <strong>make_card</strong><span>(in_author, in_title, in_text, in_image, in_card_id, in_pages)</span>
+                                <blockquote>
+                                    <p>This is a function that generates new card news in the card news table. This only works on the client side. No requests are sent to the server.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>in_author</p>
+                                    <blockquote>
+                                        <p>The author of the card news. This is a string of up to 17 characters.</p>
+                                    </blockquote>
+                                    <p>in_title</p>
+                                    <blockquote>
+                                        <p>The title of the card news. This is a string of up to 24 characters.</p>
+                                    </blockquote>
+                                    <p>in_text</p>
+                                    <blockquote>
+                                        <p>The content of the card news. This is a string of up to 64 characters.</p>
+                                    </blockquote>
+                                    <p>in_image</p>
+                                    <blockquote>
+                                        <p>The main image URL of the card news. This is a string of up to 2100 characters.</p>
+                                    </blockquote>
+                                    <p>in_card_id</p>
+                                    <blockquote>
+                                        <p>The unique id of card news. This is a unique integer.</p>
+                                    </blockquote>
+                                    <p>in_pages</p>
+                                    <blockquote>
+                                        <p>The number of pages in card news. This is an integer greater than or equal to zero.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>load_card_news</strong><span>(complete_function)</span>
+                                <blockquote>
+                                    <p>This is a function that receives a list of card news from the server and updates the contents of the card news table.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>complete_function[option]</p>
+                                    <blockquote>
+                                        <p>This function is called after the card news list has been successfully received and the card news table has been updated.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>share</strong><span>(site, url)</span>
+                                <blockquote>
+                                    <p>This is a function that opens a window that shares a card news page with another SNS.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>site</p>
+                                    <blockquote>
+                                        <p>The SNS to share card news page. ('facebook', 'twitter', 'google', ...)</p>
+                                    </blockquote>
+                                    <p>url</p>
+                                    <blockquote>
+                                        <p>The URL of the card news page to share.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>session_check</strong><span>()</span>
+                                <blockquote>
+                                    <p>This is a function that checks if the current session is valid. It gets the results from the server and changes the user's status to log out if the session is not valid.</p>
+                                    <br />
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>enable_loading</strong><span>()</span>
+                                <blockquote>
+                                    <p>This is a function that creates a loading mask on the page and blocks user input.</p>
+                                    <br />
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>disable_loading</strong><span>()</span>
+                                <blockquote>
+                                    <p>This is a function that removes the generated loading mask.</p>
+                                    <br />
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>enable_mask</strong><span>(name)</span>
+                                <blockquote>
+                                    <p>This is a function that creates a mask with a specific name on the page. Mask blocks user input and disappears when clicked.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>name</p>
+                                    <blockquote>
+                                        <p>The name of the mask to create.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>disable_mask</strong><span>(name)</span>
+                                <blockquote>
+                                    <p>This is a function that removes the mask of the generated specific name.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>name</p>
+                                    <blockquote>
+                                        <p>The name of the mask to remove.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>getQuerystring</strong><span>(paramName)</span>
+                                <blockquote>
+                                    <p>This is a function that extracts certain parameters from the query of the current url.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>paramName</p>
+                                    <blockquote>
+                                        <p>The name of the parameter to extract.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>The value of the extracted parameter. This is a string type.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>open_card_news_viewer</strong><span>(id, edit_mode)</span>
+                                <blockquote>
+                                    <p>This is a function that opens specific card news to the card news viewer.</p>
+                                    <br />
+
+                                    <strong>Parameters</strong>
+                                    <p>id</p>
+                                    <blockquote>
+                                        <p>The card is the ID of the target card news that is opened by the news viewer.</p>
+                                    </blockquote>
+                                    <p>edit_mode[option]</p>
+                                    <blockquote>
+                                        <p>Whether to enable edit mode. The default setting is false.</p>
+                                    </blockquote>
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>set_state_login</strong><span>()</span>
+                                <blockquote>
+                                    <p>This function sets the current user's status to login. This only works on the client side. No requests are sent to the server.</p>
+                                    <br />
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+
+                                <hr /><!-- =================================================================================== -->
+
+                                <strong>set_state_logout</strong><span>()</span>
+                                <blockquote>
+                                    <p>This function sets the current user's status to  log out. This only works on the client side. No requests are sent to the server.</p>
+                                    <br />
+
+                                    <strong>Return value</strong>
+                                    <p>This function does not return a value.</p>
+                                </blockquote>
+                            </section>
 
 					</div>
 				</div>
