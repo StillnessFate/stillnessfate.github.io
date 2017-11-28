@@ -1,5 +1,10 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@font-face {
+    font-family:"lobster";
+    src:url("../../assets/fonts/Lobster_1.3.otf")format("opentype");
+}
+
 
 /*
 	Landed by HTML5 UP
@@ -214,6 +219,13 @@
 		}
 
 	}
+
+/* Logo Font */
+#logo {
+    font-family:"lobster";
+    font-size: 22px;
+}
+
 
 /* Grid */
 
