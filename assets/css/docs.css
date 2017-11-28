@@ -78,6 +78,7 @@ blockquote {
 }
 .docs-content {
     padding-left: 35px !important;
+    margin-bottom:100px;
 }
 
 .docs-content p {
