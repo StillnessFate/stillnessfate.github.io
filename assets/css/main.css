@@ -3286,14 +3286,14 @@
 			top: 0;
 		}
 
-		#header h2 {
+		#header #version {
 			height: inherit;
-			left: 7.25em;
+			left: 150px;
 			line-height: inherit;
 			margin: 0;
 			position: absolute;
 			top: 0;
-			font-size: 120%;
+			font-size: 100%;
 		}
 
 		#header nav {

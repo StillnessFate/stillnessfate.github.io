@@ -33,6 +33,8 @@
 
         // Header menu load
             $("#header").load("header.html");
+        // Footer load
+            $("#footer").load("footer.html");
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
