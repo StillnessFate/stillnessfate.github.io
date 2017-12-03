@@ -1588,7 +1588,7 @@
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		color: #e44c65;
 		text-decoration: none;
 	}
@@ -2136,6 +2136,12 @@
 		line-height: 1.5em;
 	}
 
+    header .main-subtext {
+        font-size: 1.25em;
+        margin-top: -1em;
+        line-height: 1.75em;
+    }
+
 	header.major {
 		margin: 0 0 4em 0;
 		position: relative;
@@ -2569,6 +2575,7 @@
 					}
 
 		ul.actions {
+            margin-top: 30px;
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
@@ -3284,6 +3291,16 @@
 			margin: 0;
 			position: absolute;
 			top: 0;
+		}
+
+		#header #version {
+			height: inherit;
+			left: 150px;
+			line-height: inherit;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			font-size: 100%;
 		}
 
 		#header nav {
