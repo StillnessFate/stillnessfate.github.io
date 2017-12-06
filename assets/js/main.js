@@ -32,9 +32,9 @@
 				$body.addClass('is-touch');
 
         // Header menu load
-            $("#header").load("header.html");
+            $("#header").load("/header.html");
         // Footer load
-            $("#footer").load("footer.html");
+            $("#footer").load("/footer.html");
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
