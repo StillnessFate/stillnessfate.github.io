@@ -10,12 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/docs.css" />
-        <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/docs.css" />
+        <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="../favicon.ico">
 	</head>
 	<body style="">
 		<div id="page-wrapper">
@@ -24,37 +24,17 @@
 				<header id="header">
 				</header>
             <!-- Sidebar -->
-                            <section id="content">
-                                <div class="vertical-menu" style="height: 100%">
-                                    <input type="text" id="myInput" placeholder="Search...">
-                                    <hr style="width:110%">
-                                    <a href="#" class="active" style="padding-bottom: 1px;">Getting Started</a>
-                                    <a href="#" style="text-decoration: none">Introduction</a>
-                                    <a href="#">Download</a>
-                                    <a href="#">Contents</a>
-                                    <a href="#">Browsers & devices</a>
-                                    <a href="#">JavaScript</a>
-                                    <a href="#">Theming</a>
-                                    <a href="#">Build Tools</a>
-                                    <a href="#">Webpack</a>
-                                    <a href="#">Accessibility</a>
-                                    <hr style="border-color: rgba(0, 0, 0, 0);">
-                                    <a href="#" class="contents">Layout</a>
-                                    <a href="#" class="contents">Content</a>
-                                    <a href="#" class="contents">Components</a>
-                                    <a href="#" class="contents">Utilities</a>
-                                    <a href="#" class="contents">Extend</a>
-                                    <a href="#" class="contents">Migration</a>
-                                    <a href="#" class="contents">About</a>
-                                </div>
-                            </section>
+                <section id="content">
+                    <div class="vertical-menu" style="height: 100%">
+                    </div>
+                </section>
 			<!-- Main -->
 				<div id="main" class="">
 					<div class="" style="background-color: #1c1d26;">
                         
 						<!-- Content -->
 							<section class="docs-content" style="margin-left: 200px; margin-top: 25px; padding-left: 20px; min-width: 900px;">
-                                <h2>Documentation for developers. (Reference)</h2>
+                                <h2>Javascript Reference (for developers)</h2>
                                 <br />
 
                                 <strong>make_card</strong><span>(in_author, in_title, in_text, in_image, in_card_id, in_pages)</span>
@@ -264,15 +244,15 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-            <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+            <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
             <script>
                 (function($){
                     $(window).on("load",function(){
@@ -285,6 +265,9 @@
                         });
                     });
                 })(jQuery);
+                $("#content .vertical-menu").load("sidebar.html", function () { //this function will be called when content has loaded
+                    $("#content .vertical-menu a:contains(Reference)").addClass("active");
+                });
             </script>
 	</body>
 </html>

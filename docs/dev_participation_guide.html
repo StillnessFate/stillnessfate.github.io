@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Docs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/docs.css" />
+        <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="shortcut icon" href="../favicon.ico">
+	</head>
+	<body style="">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+				</header>
+            <!-- Sidebar -->
+                <section id="content">
+                    <div class="vertical-menu" style="height: 100%">
+                    </div>
+                </section>
+			<!-- Main -->
+				<div id="main" class="">
+					<div class="" style="background-color: #1c1d26;">
+                        
+						<!-- Content -->
+							<section class="docs-content" style="margin-left: 200px; margin-top: 25px; padding-left: 20px; min-width: 900px;">
+                                <h2>Development Participation Guide</h2>
+                                <br />
+                                <p><strong>Anyone can contribute by participating in the development of a project!</strong></p>
+                                <p>NewSTyle is an open source project open to everyone.</p>
+                                <p>But please observe some precautions.</p>
+                                <br />
+                                <p><strong>Issues</strong></p>
+                                <p>We hope you have a lot of communication through the issues tab in Github.</p>
+                                <p>Create a new issue if you have any bugs or questions you've found</p>
+                                <p>But be sure to choose the right label to avoid confusion.</p>
+                                <br />
+                                <p><strong>Pull requests</strong></p>
+                                <p>Before making a pull request, make sure that the state of the project is the latest version and check that there are no conflicts.</p>
+                                <br />
+                                <p><strong>License</strong></p>
+                                <p>If you add a module with a different license, make sure that it does not conflict with the current license.</p>
+                                <p>This is very important for open source projects.</p>
+                            </section>
+
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+            <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+            <script>
+                (function($){
+                    $(window).on("load",function(){
+                        $(".vertical-menu").mCustomScrollbar({
+                            alwaysShowScrollbar: 1,
+                            autoHideScrollbar: true,
+                            setHeight:"100%",
+                            scrollbarPosition:"relative",
+                            theme:"light"
+                        });
+                    });
+                })(jQuery);
+                $("#content .vertical-menu").load("sidebar.html", function () { //this function will be called when content has loaded
+                    $("#content .vertical-menu a:contains(Development participation guide)").addClass("active");
+                });
+            </script>
+	</body>
+</html>

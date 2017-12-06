@@ -1,0 +1,111 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Docs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/docs.css" />
+        <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="shortcut icon" href="../favicon.ico">
+	</head>
+	<body style="">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+				</header>
+            <!-- Sidebar -->
+                <section id="content">
+                    <div class="vertical-menu" style="height: 100%">
+                    </div>
+                </section>
+			<!-- Main -->
+				<div id="main" class="">
+					<div class="" style="background-color: #1c1d26;">
+                        
+						<!-- Content -->
+							<section class="docs-content" style="margin-left: 200px; margin-top: 25px; padding-left: 20px; min-width: 900px;">
+                                <h2>How to use NewSTyle (User Manual)</h2>
+                                <br />
+                                <p><strong>View Card News</strong></p>
+                                <p>You can click on the title of each card news to view its contents.</p>
+                                <p>This can be done by anyone.</p>
+                                <br />
+                                <p><strong>Register and Login</strong></p>
+                                <img src="../images/login.jpg" />
+                                <p>You must log in first to create and edit your card news.</p>
+                                <p>You can log in by clicking the [Login] button on the upper right. If you do not have an account, you can create a new account by pressing the [Register] button.</p>
+                                <br />
+                                <p><strong>Create New Card News</strong></p>
+                                <img src="../images/new_card.jpg" />
+                                <p>You can create a new card by pressing the [New Card News] button on the bottom right corner. In the cover image, enter the URL of the image file.</p>
+                                <p>This is only possible with login.</p>
+                                <br />
+                                <p><strong>Refresh Card News List</strong></p>
+                                <img src="../images/refresh.jpg" />
+                                <p>Reload the card news list.</p>
+                                <br />
+                                <p><strong>Edit or Delete Card News</strong></p>
+                                <p>You can edit or delete card news via the [Edit] and [Delete] buttons of each card news.</p>
+                                <p>This is only possible for authors of card news.</p>
+                                <br />
+                                <blockquote>
+                                    <p><strong>Edit Card News Info</strong></p>
+                                    <img src="../images/edit_info.jpg" />
+                                    <p>You can change the basic information of the card news by pressing the [Edit card news info] button.</p>
+                                    <p>This is only possible for authors of card news.</p>
+                                    <br />
+                                    <p><strong>Edit Card News Pages</strong></p>
+                                    <img src="../images/edit_pages.jpg" />
+                                    <p>You can add or modify pages of the card news by pressing the [Edit card news pages] button.</p>
+                                    <p>This is only possible for authors of card news.</p>
+                                    <br />
+                                </blockquote>
+                                <p><strong>Share to SNS</strong></p>
+                                <i class="fa fa-share-alt" aria-hidden="true" style="font-size:30px"></i>
+                                <p>You can share your card news to the selected SNS by pressing the share button of each card news.</p>
+                                <br />
+                            </section>
+
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+            <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+            <script>
+                (function($){
+                    $(window).on("load",function(){
+                        $(".vertical-menu").mCustomScrollbar({
+                            alwaysShowScrollbar: 1,
+                            autoHideScrollbar: true,
+                            setHeight:"100%",
+                            scrollbarPosition:"relative",
+                            theme:"light"
+                        });
+                    });
+                })(jQuery);
+                $("#content .vertical-menu").load("sidebar.html", function () { //this function will be called when content has loaded
+                    $("#content .vertical-menu a:contains(How to use)").addClass("active");
+                });
+            </script>
+	</body>
+</html>

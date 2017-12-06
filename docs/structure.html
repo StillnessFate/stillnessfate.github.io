@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Docs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/docs.css" />
+        <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="shortcut icon" href="../favicon.ico">
+	</head>
+	<body style="">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+				</header>
+            <!-- Sidebar -->
+                <section id="content">
+                    <div class="vertical-menu" style="height: 100%">
+                    </div>
+                </section>
+			<!-- Main -->
+				<div id="main" class="">
+					<div class="" style="background-color: #1c1d26;">
+                        
+						<!-- Content -->
+							<section class="docs-content" style="margin-left: 200px; margin-top: 25px; padding-left: 20px; min-width: 900px;">
+                                <h2>Directory and File Structure</h2>
+                                <br />
+                                <p><strong>/twisted_WSGI.py</strong></p>
+                                <p>It is a WSGI server that connects web server (Nginx) and web application (/app.py).</p>
+                                <p>It uses a twisted framework.</p>
+                                <br />
+                                <p><strong>/app.py</strong></p>
+                                <p>It is a real web application.</p>
+                                <br />
+                                <p><strong>/data/</strong></p>
+                                <p>Directory where various dynamic data are stored.</p>
+                                <br />
+                                <blockquote>
+                                    <p><strong>/data/database.db</strong></p>
+                                    <p>An SQLite repository that stores user account information and card news information.</p>
+                                    <br />
+                                    <p><strong>/data/cards/{cardnews_id}/{cardnews_pagenumber}.json</strong></p>
+                                    <p>This is the space where the editor information of pages is saved. cardnews_id is a unique integer value, and cardnews_pagenumber is an integer value from 1 to more.</p>
+                                    <p>When card news is deleted, the cardnews_id directory will also be deleted.</p>
+                                    <br />
+                                </blockquote>
+                                <p><strong>/html/</strong></p>
+                                <p>The directory where web content is stored.</p>
+                                <br />
+                                <blockquote>
+                                    <p><strong>/html/cards/{cardnews_id}/{cardnews_pagenumber}.html</strong></p>
+                                    <p>This is the space where the actual card news pages are stored. cardnews_id is a unique integer value, and cardnews_pagenumber is an integer value from 1 to more.</p>
+                                    <p>When card news is deleted, the cardnews_id directory will also be deleted.</p>
+                                    <br />
+                                </blockquote>
+                            </section>
+
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+            <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+            <script>
+                (function($){
+                    $(window).on("load",function(){
+                        $(".vertical-menu").mCustomScrollbar({
+                            alwaysShowScrollbar: 1,
+                            autoHideScrollbar: true,
+                            setHeight:"100%",
+                            scrollbarPosition:"relative",
+                            theme:"light"
+                        });
+                    });
+                })(jQuery);
+                $("#content .vertical-menu").load("sidebar.html", function () { //this function will be called when content has loaded
+                    $("#content .vertical-menu a:contains(Structure)").addClass("active");
+                });
+            </script>
+	</body>
+</html>
