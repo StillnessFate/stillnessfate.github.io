@@ -1,6 +1,6 @@
 ﻿function make_card(in_author, in_title, in_text, in_image, in_card_id, in_pages) {
     var table = document.getElementById("card-table");
-    var share_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') + '/?card_news_id=' + in_card_id;
+    var share_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') + '/demo/demo.html?card_news_id=' + in_card_id;
 
     var card = document.createElement('div');
     card.className = "card card-type-1";
